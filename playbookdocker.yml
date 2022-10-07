@@ -20,7 +20,7 @@
   - name: create container
     command: docker run -itd -P myadd:ansible2
   - name: build image
-    command: docker build myadd:ansible2
+    command: docker run --name myadd:ansible2 ubuntu
   - name: check image
     command: docker images
     
